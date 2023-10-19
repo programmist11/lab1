@@ -25,7 +25,7 @@ def main():
     slovar={}
     slovar["friends"] = friends
 
-    write_json(person_req.json(), slovar, id)
+    write_json(person_req.json(), json.dumps(slovar), id)
 
 
 if __name__ == '__main__':
